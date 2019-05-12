@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TSN_ANDROID_DEMO_HELLO.iml" filepath="$PROJECT_DIR$/TSN_ANDROID_DEMO_HELLO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TSN_DEMO_01_Sum/TSN_DEMO_01_Sum.iml" filepath="$PROJECT_DIR$/TSN_DEMO_01_Sum/TSN_DEMO_01_Sum.iml" />
+    </modules>
+  </component>
+</project>

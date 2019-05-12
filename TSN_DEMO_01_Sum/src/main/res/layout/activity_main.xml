@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Будет линейная компоновка элементов, окно на весь экран,
+     компоненты должны располагаться вертикально и по-центру экрана -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Картинка "androidify" на всю ширину экрана
+         с масштабированием и по высоте 50 пикселей типа "dp" -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/androidify"/>
+
+    <!-- Поле ввотда текста c шириной в 10 букв "М",
+         с авторазмером по высоте, любые символы
+         и сверху отступ в 5 dp -->
+    <EditText
+        android:id="@+id/editText_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="A="
+        android:layout_marginTop="5dp"
+        android:inputType="textPersonName"/>
+
+    <!-- Поле ввотда текста на всю ширину экрана,
+         с авторазмером по высоте, любые символы
+         и снизу отступ в 5 dp -->
+    <EditText
+        android:id="@+id/editText_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="B="
+        android:layout_marginBottom="5dp"
+        android:inputType="textPersonName"/>
+
+    <!-- Кнопка на всю ширину экрана и с авторазмером по высоте,
+         при нажатии будет искать и вызывать метод "onClick",
+         отступ по-краям в 5 dp-->
+    <Button
+        android:id="@+id/buttonSum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="onClick"
+        android:text="Сумма"/>
+
+    <!-- Текстовое поле для ответа на всю ширину экрана,
+         с авторазмером по высоте, по-центру экрана
+         и заданным цветом текста -->
+    <TextView
+        android:id="@+id/textView_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Введите цифры и нажмите кнопку сумма"
+        android:textColor="#256736"
+        android:gravity="center"/>
+
+</LinearLayout>
