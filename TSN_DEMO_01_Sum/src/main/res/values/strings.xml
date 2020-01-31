@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TSN_DEMO_01_Sum</string>
+    <string name="b">B=</string>
+    <string name="sum">Сумма</string>
+    <string name="button_name">Введите цифры и нажмите кнопку сумма</string>
+    <string name="a">A=</string>
+    <string name="logo">logo</string>
+    <string name="logo">logo</string>
 </resources>

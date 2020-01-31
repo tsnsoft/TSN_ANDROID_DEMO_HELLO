@@ -5,6 +5,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -17,7 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/androidify"/>
+        app:srcCompat="@drawable/androidify"
+        android:contentDescription="@string/logo" />
 
     <!-- Поле ввотда текста c шириной в 10 букв "М",
          с авторазмером по высоте, любые символы
@@ -26,10 +28,11 @@
         android:id="@+id/editText_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="A="
         android:layout_marginTop="5dp"
-        android:inputType="textPersonName"/>
+        android:ems="10"
+        android:hint="@string/a"
+        android:inputType="textPersonName"
+        android:autofillHints="" tools:targetApi="o" />
 
     <!-- Поле ввотда текста на всю ширину экрана,
          с авторазмером по высоте, любые символы
@@ -38,9 +41,10 @@
         android:id="@+id/editText_b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="B="
+        android:hint="@string/b"
         android:layout_marginBottom="5dp"
-        android:inputType="textPersonName"/>
+        android:inputType="textPersonName"
+        android:importantForAutofill="no" />
 
     <!-- Кнопка на всю ширину экрана и с авторазмером по высоте,
          при нажатии будет искать и вызывать метод "onClick",
@@ -51,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:onClick="onClick"
-        android:text="Сумма"/>
+        android:text="@string/sum"/>
 
     <!-- Текстовое поле для ответа на всю ширину экрана,
          с авторазмером по высоте, по-центру экрана
@@ -60,7 +64,7 @@
         android:id="@+id/textView_sum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Введите цифры и нажмите кнопку сумма"
+        android:text="@string/button_name"
         android:textColor="#256736"
         android:gravity="center"/>
 
