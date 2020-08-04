@@ -32,7 +32,7 @@
         android:ems="10"
         android:hint="@string/a"
         android:inputType="textPersonName"
-        android:autofillHints="" tools:targetApi="o" />
+        android:autofillHints="no" />
 
     <!-- Поле ввотда текста на всю ширину экрана,
          с авторазмером по высоте, любые символы
@@ -65,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_name"
-        android:textColor="#256736"
+        android:textColor="#25675A"
         android:gravity="center"/>
 
 </LinearLayout>

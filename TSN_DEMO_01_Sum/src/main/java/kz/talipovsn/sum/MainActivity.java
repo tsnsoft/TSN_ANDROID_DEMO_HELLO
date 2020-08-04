@@ -2,7 +2,6 @@ package kz.talipovsn.sum;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,29 +20,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Доступ к компонентам окна
-        editText_a = (EditText) findViewById(R.id.editText_a);
-        editText_b = (EditText) findViewById(R.id.editText_b);
-        textView_sum = (TextView) findViewById(R.id.textView_sum);
-        buttonSum = (Button) findViewById(R.id.buttonSum);
-
-        // Собственный обработчик нажатий на клавиши
-        View.OnKeyListener myKeyListener = new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                // Проверка условия: если пусто в "a" или "b"
-                if (editText_a.getText().toString().trim().equals("") ||
-                        editText_b.getText().toString().trim().equals("")) {
-                    buttonSum.setEnabled(false); // Выключаем доступность нажатия у кнопки
-                } else {
-                    buttonSum.setEnabled(true); // Включаем доступность нажатия у кнопки
-                }
-                return false;
-            }
-        };
-
-        buttonSum.setEnabled(false); // Выключаем доступность нажатия у кнопки
-        editText_a.setOnKeyListener(myKeyListener); // Добавляем к компоненту свой обработчик нажатий
-        editText_b.setOnKeyListener(myKeyListener); // Добавляем к компоненту свой обработчик нажатий
+        editText_a = findViewById(R.id.editText_a);
+        editText_b = findViewById(R.id.editText_b);
+        textView_sum = findViewById(R.id.textView_sum);
+        buttonSum = findViewById(R.id.buttonSum);
     }
 
     // МЕТОД КНОПКИ РАСЧЕТА
@@ -54,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         try { // НАЧАЛО ЗАЩИЩЕННОГО БЛОКА
 
             // Чтение данных из компонент
-            a = Double.valueOf(editText_a.getText().toString().trim());
-            b = Double.valueOf(editText_b.getText().toString().trim());
+            a = Double.parseDouble(editText_a.getText().toString().trim());
+            b = Double.parseDouble(editText_b.getText().toString().trim());
 
             // Основной алгоритм
             c = a + b;
