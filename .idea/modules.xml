@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TSN_ANDROID_DEMO_HELLO.iml" filepath="$PROJECT_DIR$/TSN_ANDROID_DEMO_HELLO.iml" group="TSN_ANDROID_DEMO_HELLO" />
-      <module fileurl="file://$PROJECT_DIR$/TSN_DEMO_01_Sum/TSN_DEMO_01_Sum.iml" filepath="$PROJECT_DIR$/TSN_DEMO_01_Sum/TSN_DEMO_01_Sum.iml" group="TSN_ANDROID_DEMO_HELLO/TSN_DEMO_01_Sum" />
+      <module fileurl="file://$PROJECT_DIR$/TSN_ANDROID_DEMO_HELLO.iml" filepath="$PROJECT_DIR$/TSN_ANDROID_DEMO_HELLO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_01_Sum/TSN_ANDROID_DEMO_HELLO.TSN_DEMO_01_Sum.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_01_Sum/TSN_ANDROID_DEMO_HELLO.TSN_DEMO_01_Sum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_01_Sum/TSN_ANDROID_DEMO_HELLO.TSN_DEMO_01_Sum.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_01_Sum/TSN_ANDROID_DEMO_HELLO.TSN_DEMO_01_Sum.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_01_Sum/TSN_ANDROID_DEMO_HELLO.TSN_DEMO_01_Sum.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_01_Sum/TSN_ANDROID_DEMO_HELLO.TSN_DEMO_01_Sum.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TSN_DEMO_01_Sum/TSN_ANDROID_DEMO_HELLO.TSN_DEMO_01_Sum.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/TSN_DEMO_01_Sum/TSN_ANDROID_DEMO_HELLO.TSN_DEMO_01_Sum.unitTest.iml" />
     </modules>
   </component>
 </project>
