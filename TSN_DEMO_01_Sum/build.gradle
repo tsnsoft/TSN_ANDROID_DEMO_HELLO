@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 35
     defaultConfig {
         applicationId "kz.talipovsn.sum"
-        minSdkVersion 19
-        targetSdkVersion 33
-        versionCode 3
-        versionName "1.3"
+        minSdkVersion 24
+        targetSdkVersion 35
+        versionCode 4
+        versionName "2025.02"
     }
     buildTypes {
         release {
@@ -15,10 +15,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'kz.talipovsn.sum'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.5.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.22"))
 }
